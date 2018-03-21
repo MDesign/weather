@@ -1,0 +1,382 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../pictures/new-york-city-night-visual-effect-wallpaper-5111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 1px black;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 35px 50px;
+    list-style: none;
+}
+
+nav ul li a {
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+.contenedor{
+    display: flex;
+    line-height: 150px;
+    font-size: 2em;
+    margin: auto;
+    overflow: hidden;
+    height: 150px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 10s infinite;
+}
+
+ul li{
+  font-size: 2em;
+    letter-spacing: 4px;
+    transition: 3s all ease 3s;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+@keyframes cambiar {
+    0% {
+        margin-top: 0
+    }
+    20% {
+        margin-top: 0
+    }
+
+    25% {
+        margin-top: -150px
+    }
+    50% {
+        margin-top: -150px
+    }
+
+    55% {
+        margin-top: -300px
+    }
+    80% {
+        margin-top: -300px
+    }
+
+    85% {
+        margin-top: -150px
+    }
+    95% {
+        margin-top: -150px
+    }
+
+    100% {
+        margin-top: 0px
+    }
+}
+
+
+.main {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../pictures/new-york-city-night-visual-effect-wallpaper-5111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 2;
+}
+
+.filter {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.main-info {
+    padding: 20px;
+    color: white;
+}
+
+.main-info h1{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black;
+}
+
+.main-info p {
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.cities {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.containingDiv {
+    width: 33.3%;
+    height: 40%;
+    color: orange;
+    position: relative;
+}
+
+.generalDiv {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.divCity {
+    width: 100%;
+    height: 100%;
+
+}
+
+.divCity p {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.divInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+.divInfo p {
+    width: 50%;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------ANIMACION FLIP DIV-----------------------------------------------------------------*/
+
+/* entire container, keeps perspective */
+
+.containingDiv {
+    perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+
+.containingDiv:hover .generalDiv,
+.containingDiv.hover .generalDiv {
+    transform: rotateY(180deg);
+}
+
+/* flip speed goes here */
+
+.generalDiv {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+
+.divCity,
+.divInfo {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+
+.divCity {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+
+.divInfo {
+    transform: rotateY(180deg);
+}
+
+/*-----------------------------------------------FOTOGRAFIAS CIUDADES-----------------------------------------------------------------------------*/
+
+#Yafran {
+    background-image: url(../pictures/yafran.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Sabratah {
+    background-image: url(../pictures/SABRATAH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Gharyan {
+        background-image: url(../pictures/GHARYAN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Zuwarah {
+        background-image: url(../pictures/ZUWARAH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Zawiya {
+    background-image: url(../pictures/zawyia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Tripoli {
+        background-image: url(../pictures/tripoli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Tarhuna {
+    background-image: url(../pictures/tarhuna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Masallatah {
+        background-image: url(../pictures/masallatah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#AlKhums {
+    background-image: url(../pictures/Al-Khums.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Zlitan {
+        background-image: url(../pictures/zliten.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Birkirkara {
+    background-image: url(../pictures/Birkirkara.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Ragusa {
+        background-image: url(../pictures/ragusa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Pozzallo {
+    background-image: url(../pictures/pozzallo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Modica {
+        background-image: url(../pictures/modica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}
+
+#Rosolini {
+    background-image: url(../pictures/rosolini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid orange;
+}

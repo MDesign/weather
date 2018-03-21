@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,.2);
+    box-shadow: 1px 1px 1px black;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    padding: 35px 50px;
+    list-style: none;
+}
+
+nav ul li a{
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+     color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+.main{
+    width: 100%;
+    height: 75vh;
+    background-image: url(../pictures/new-york-city-night-visual-effect-wallpaper-5111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+}
+
+.filter{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.3);
+}
+
+.main-info{
+    padding: 20px;
+    color: white;
+}
+
+.main-info h1{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 4em;
+    text-shadow: 1px 1px 1px black;
+}
+
+.main-info p{
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    color: orange;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,.2);
+}
+
+.cities{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.divCity{
+    width:33.3%;
+    height: 40%;
+    color: orange;
+    position: relative;
+}
+
+.filterCity{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.filterCity:hover{
+    background-color: rgba(0,0,0,0);
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.divInfo{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.divInfo p{
+    width: 50%;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*-------------------------CITIES PICTURES-------------------------------*/
+
+#Yafran{
+    background-image: url(../pictures/yafran.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Sabratah{
+    background-image: url(../pictures/SABRATAH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Gharyan{
+    background-image: url(../pictures/GHARYAN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Zuwarah{
+    background-image: url(../pictures/ZUWARAH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Zawiya{
+    background-image: url(../pictures/zawyia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Tripoli{
+    background-image: url(../pictures/tripoli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Tarhuna{
+    background-image: url(../pictures/tarhuna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Masallatah{
+    background-image: url(../pictures/masallatah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Al Khums{
+    background-image: url(../pictures/Al-Khums.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Zlitan{
+    background-image: url(../pictures/zliten.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Birkirkara{
+    background-image: url(../pictures/Birkirkara.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Ragusa{
+    background-image: url(../pictures/ragusa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Pozzallo{
+    background-image: url(../pictures/pozzallo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Modica{
+    background-image: url(../pictures/modica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#Rosolini{
+    background-image: url(../pictures/rosolini.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------------------------------------------FLIP IMAGES-----------------------------------------------------------*/
+
